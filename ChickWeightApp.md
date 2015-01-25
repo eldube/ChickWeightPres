@@ -3,6 +3,7 @@ The Effect of Diet on Chicken Weight
 author: Enock L. Dube
 date: 23 January 2015
 
+
 INTRODUCTION
 ========================================================
   * The rate of growth for chicks can depend on the diet they are given.
@@ -45,13 +46,12 @@ data(ChickWeight)
 
 * A regression model for each diet (sample shown in next slide) can be build using the average weight at each recorded time interval.
 
-
 SAMPLE REGRESSION MODEL
 ========================================================
 
 
 ```r
-source ("helpers.R") #source code available from 
+source ("helpers.R") #see code in my github repo: https://github.com/eldube/ChickWeightPres.git
 diet <- 1
 data <- ChickWeight
 model <-  getDietModel(ChickData = data, dietchoice = diet)
